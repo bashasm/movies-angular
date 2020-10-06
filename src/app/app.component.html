@@ -1,0 +1,15 @@
+<header>
+  <form action="" (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      name="searchTerm"
+      [(ngModel)]="searchTerm"
+      class="search"
+      placeholder="Search..."
+    />
+  </form>
+</header>
+
+<div class="movies">
+  <app-movie [movie]="movie" *ngFor="let movie of movies"> </app-movie>
+</div>

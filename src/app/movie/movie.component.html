@@ -1,0 +1,13 @@
+<div class="movie">
+  <img src="{{ path }}" alt="{{ movie.title }}" />
+  <div class="movie-info">
+    <h3>{{ movie.title }}</h3>
+    <span [ngClass]="'tag ' + setVoteClass(movie.vote_average)">
+      {{ movie.vote_average }}
+    </span>
+  </div>
+  <div class="movie-over">
+    <h2>Overview</h2>
+    <p>{{ movie.overview }}</p>
+  </div>
+</div>
